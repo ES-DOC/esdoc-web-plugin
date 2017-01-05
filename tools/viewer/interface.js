@@ -20,7 +20,7 @@
             viewerBaseURL = 'http://view.es-doc.org';
         }
     } else {
-        viewerBaseURL = '../../esdoc-web/viewer/index.html';
+        viewerBaseURL = '../esdoc-web-view/index.html';
     }
 
     // Performs standard parameter validation.

@@ -53,7 +53,7 @@
             ESDOC.options.staticBaseURL = 'http://static.es-doc.org';
         }
     } else {
-        ESDOC.options.staticBaseURL = '../../esdoc-static';
+        ESDOC.options.staticBaseURL = '../esdoc-web-static';
     }
 
     // Set custom options.
