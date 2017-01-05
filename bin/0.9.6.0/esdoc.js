@@ -8,7 +8,7 @@
  *     CeCILL       http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
  *     GPL v3       http://www.gnu.org/licenses/gpl.html
  *
- * Date: Thu Jan  5 18:18:22 UTC 2017
+ * Date: Thu Jan  5 19:14:49 UTC 2017
  */
 
 /*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
@@ -407,7 +407,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
     // Initialise root object.
     root.CIM = root.cim = root.ESDOC = root.esdoc = {
         // App version.
-        VERSION: '0.9.5.3',
+        VERSION: '0.9.6.0',
 
         // App name.
         NAME: "Earth System Documentation",
@@ -4492,8 +4492,8 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
     ESDOC.comparator.constants = {
         // C1 comparator constants.
         c1 :{
-            TAB1_HELP_URL : "https://github.com/ES-DOC/esdoc-web/wiki/Comparator-Help",
-            TAB2_HELP_URL : "https://github.com/ES-DOC/esdoc-web/wiki/Comparator-Help"
+            TAB1_HELP_URL : "https://github.com/ES-DOC/esdoc-web-compare/wiki/CMIP5-Comparator-Help",
+            TAB2_HELP_URL : "https://github.com/ES-DOC/esdoc-web-compare/wiki/CMIP5-Comparator-Help"
         }
     };
 

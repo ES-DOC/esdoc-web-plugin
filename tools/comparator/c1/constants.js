@@ -9,8 +9,8 @@
     ESDOC.comparator.constants = {
         // C1 comparator constants.
         c1 :{
-            TAB1_HELP_URL : "https://github.com/ES-DOC/esdoc-web/wiki/Comparator-Help",
-            TAB2_HELP_URL : "https://github.com/ES-DOC/esdoc-web/wiki/Comparator-Help"
+            TAB1_HELP_URL : "https://github.com/ES-DOC/esdoc-web-compare/wiki/CMIP5-Comparator-Help",
+            TAB2_HELP_URL : "https://github.com/ES-DOC/esdoc-web-compare/wiki/CMIP5-Comparator-Help"
         }
     };
 
