@@ -1,14 +1,14 @@
 /*!
- * esdoc-js-client - javascript Library v0.9.5.3
+ * esdoc-js-client - javascript Library v0.9.6.0
  * https://github.com/ES-DOC/esdoc-js-client
  *
- * Copyright 2016, ES-DOC (http://es-doc.org)
+ * Copyright 2017, ES-DOC (http://es-doc.org)
  *
  * Licensed under the following licenses:.
  *     CeCILL       http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
  *     GPL v3       http://www.gnu.org/licenses/gpl.html
  *
- * Date: Tue Nov 22 20:40:43 UTC 2016
+ * Date: Thu Jan  5 18:18:22 UTC 2017
  */
 
 /*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
@@ -531,7 +531,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
             ESDOC.options.staticBaseURL = 'http://static.es-doc.org';
         }
     } else {
-        ESDOC.options.staticBaseURL = '../../esdoc-static';
+        ESDOC.options.staticBaseURL = '../esdoc-web-static';
     }
 
     // Set custom options.
@@ -3374,7 +3374,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
             viewerBaseURL = 'http://view.es-doc.org';
         }
     } else {
-        viewerBaseURL = '../../esdoc-web/viewer/index.html';
+        viewerBaseURL = '../esdoc-web-view/index.html';
     }
 
     // Performs standard parameter validation.
