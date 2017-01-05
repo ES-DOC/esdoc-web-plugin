@@ -1,0 +1,106 @@
+.cim-component-outer {
+    overflow-y: auto;
+
+    .cim-component {
+        width: 100%;
+
+        .cim-component-tree-outer {
+            float:left;
+            width: 30%;
+            overflow-y:auto;
+            max-height: 550px;
+
+            .cim-component-tree {
+                .cim-component-tree-node {
+                    border: 0;
+                    cursor: pointer;
+                    padding: @base-padding-2;
+                    .name {
+                        .text {
+                            font-weight: bold;
+                        }
+                    }
+                    &.depth-0 {
+                        .base-margin(0);
+                        .name {
+                            .text {
+                                font-size: @base-font-4;
+                            }
+                        }
+                    }
+                    &.depth-1 .name .text{
+                        .base-margin(1, 1.5em);
+                    }
+                    &.depth-2 .name .text{
+                        .base-margin(2, 1.5em);
+                    }
+                    &.depth-3 .name .text{
+                        .base-margin(3, 1.5em);
+                    }
+                    &.depth-4 .name .text{
+                        .base-margin(4, 1.5em);
+                    }
+                    &.depth-5 .name .text{
+                        .base-margin(5, 1.5em);
+                    }
+                    &.depth-6 .name .text{
+                        .base-margin(6, 1.5em);
+                    }
+                }
+            }
+        }
+
+        .cim-component-header-outer {
+            float:right;
+            width: 69%;
+
+            .cim-component-header {
+                .esdoc-standard-header-1;
+            }
+        }
+
+        .cim-component-detail-outer {
+            float:right;
+            width: 69%;
+            overflow-y:auto;
+            overflow-x:none;
+            max-height: 523px;
+
+            .cim-component-detail {
+                font-size: 0.85em;
+
+                .cim-component-detail-section-header {
+                    .esdoc-standard-header-2;
+                }
+
+                .cim-component-detail-section-content {
+                    .cim-component-description {
+                        font-size: 1.2em;
+                        padding: @base-padding-1;
+                        margin: @base-margin-1 0 @base-margin-1 0;
+                    }
+
+                    .cim-component-property-tree {
+                        .cim-component-property-tree-node {
+                            padding: @base-padding-2;
+                            .name {
+                                .text {
+                                    font-weight: bold;
+                                }
+                            }
+                            .separator {
+                                font-weight: bold;
+                            }
+                            .value {
+                                text-transform : capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

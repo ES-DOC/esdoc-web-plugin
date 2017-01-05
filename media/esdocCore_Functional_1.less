@@ -1,0 +1,105 @@
+.esdoc-logo {
+    background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+    height:56px;
+}
+
+.esdoc-content-scrollable {
+    max-height: 550px;
+    overflow-y:auto;
+}
+
+.esdoc-content-scrollable-long {
+    max-height: 1000px;
+    overflow-y:auto;
+}
+
+.esdoc-content-block {
+    border: @base-border-1;
+    padding: @base-padding-2;
+}
+
+.esdoc-content-item {
+    &:not(:last-child) {
+        padding: 0 @base-padding-2 @base-padding-4 @base-padding-2;
+    }    
+    &:last-child {
+        padding: 0 @base-padding-2 0 @base-padding-2;
+    }
+}
+
+.esdoc-separator {
+    margin: @base-margin-1;
+}
+
+
+/*
+**************************************
+   Group Styles.
+**************************************
+*/
+.esdoc-group-set {
+    .esdoc-group-header {
+        .esdoc-standard-corners;
+        .esdoc-standard-padding;
+        .esdoc-standard-header-2;
+    }
+    .esdoc-group-content {        
+        margin-bottom: @base-margin-1;
+    }
+}
+
+/*
+**************************************
+   Field Styles.
+**************************************
+*/
+.esdoc-field {
+    div:last-child {
+        clear:both;
+    }
+
+    .esdoc-field-caption {
+        float:left;
+        font-weight: bold;
+        text-align: left;
+        &:first-letter {
+            text-transform : capitalize;
+        }
+    }
+
+    .esdoc-field-expression {
+        padding-left: 160px;
+        text-align: left;
+    }
+}
+
+/*
+**************************************
+   Named Value Styles.
+**************************************
+*/
+.esdoc-namedValue {
+    div:last-child {
+        clear:both;
+    }
+
+    .esdoc-namedValue-name {
+        float:left;
+        width: 30%;
+        padding-right: 3%;
+        font-weight:bold;
+        text-align: left;
+    }
+
+    .esdoc-namedValue-name:first-letter {
+        text-transform : capitalize;
+    }
+
+    .esdoc-namedValue-value {
+        padding-left : 33%;
+        text-align: left;
+    }
+}
+
+

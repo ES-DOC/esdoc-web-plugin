@@ -1,0 +1,65 @@
+/*
+**************************************
+   CIM comparator.
+**************************************
+*/
+
+.esdoc-comparator {
+
+    .model-list {
+        display : table;
+        width:100%;
+
+        .item {
+            display : table-row;
+
+            .name {
+                display : table-cell;
+                width: 80%;
+                .text {
+                    border: 0;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    padding: 0;
+                }
+                .esdoc-standard-corners;
+                .esdoc-standard-padding;
+            }
+
+            .view {
+                display : table-cell;
+                .text {
+                    margin-left: 0.2em;
+                    font-size: 1.0em;
+                    font-weight: normal;
+                    text-align: right;
+                    cursor: pointer;
+                    .esdoc-standard-corners;
+                    .esdoc-standard-padding;
+                    .c1-state-primary;
+                    &:hover {
+                        .c1-state-inscope;
+                    }
+                }
+            }
+
+            .indicators {
+                display : table-cell;
+                .indicator {
+                    float:left;
+                    height: 1.0em;
+                    margin-top: 8px;
+                    margin-left: 4px;
+                    width: 1.0em;
+                    .esdoc-standard-corners;
+                }
+            }
+
+            /* Indicators */
+            &.selectable-component .indicators .indicator:nth-child(1) {
+                .c1-state-inscope;
+            }
+        }
+    }
+
+}

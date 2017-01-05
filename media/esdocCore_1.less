@@ -1,0 +1,67 @@
+/*
+**************************************
+   General styles.
+**************************************
+*/
+
+/*  Fonts   */
+@base-font-1: 0.7em;
+@base-font-2: 0.85em;
+@base-font-3: 1.0em;
+@base-font-4: 1.15em;
+@base-font-5: 1.3em;
+@base-font-6: 1.45em;
+@base-font-7: 1.6em;
+
+.base-font(@font-size:@base-font-3) {
+    font-family: "Arial", "Times New Roman", "Verdana", "Helvetica", "sans-serif";
+    font-size: @font-size;
+}
+
+/*  Colors  */
+@base-color-0: rgb(255, 255, 255);
+@base-color-1: rgb(247, 247, 247);
+@base-color-2: rgb(217, 217, 217);
+@base-color-3: rgb(189, 189, 189);
+@base-color-4: rgb(150, 150, 150);
+@base-color-5: rgb(99, 99, 99);
+@base-color-6: rgb(37, 37, 37);
+@base-color-7: rgb(0, 0, 0);
+
+@base-color-0-inverse: @base-color-7;
+@base-color-1-inverse: @base-color-7;
+@base-color-2-inverse: @base-color-7;
+@base-color-3-inverse: @base-color-0;
+@base-color-4-inverse: @base-color-0;
+@base-color-5-inverse: @base-color-0;
+@base-color-6-inverse: @base-color-0;
+@base-color-7-inverse: @base-color-0;
+
+@base-border-1: 1px dotted lightgrey;
+
+
+/*  Dimensions   */
+@base-padding-0: 0.0em;
+@base-padding-1: 0.1em;
+@base-padding-2: 0.2em;
+@base-padding-3: 0.3em;
+@base-padding-4: 0.4em;
+@base-padding-5: 0.5em;
+@base-padding-6: 0.6em;
+@base-padding-7: 0.7em;
+
+@base-margin-0: 0.00em;
+@base-margin-1: 0.25em;
+@base-margin-2: 0.50em;
+@base-margin-3: 0.75em;
+@base-margin-4: 1.00em;
+@base-margin-5: 1.25em;
+@base-margin-6: 1.50em;
+
+.base-margin(@factor:1, @base-margin:0.25em) {
+    margin: @base-margin * @factor;
+}
+
+.base-indent(@factor:0, @base-indent:2.0em) {
+    margin-left: @base-indent * @factor;
+}

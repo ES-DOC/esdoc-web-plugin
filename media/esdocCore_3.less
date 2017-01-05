@@ -1,0 +1,86 @@
+/*  Other   */
+.esdoc-standard-corners (@radius: 4px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.esdoc-standard-corners-top (@radius: 4px) {
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-top-right-radius: @radius;
+    -ms-border-top-right-radius: @radius;
+    -o-border-top-right-radius: @radius;
+    border-top-right-radius: @radius;
+    -webkit-border-top-left-radius: @radius;
+    -moz-border-top-left-radius: @radius;
+    -ms-border-top-left-radius: @radius;
+    -o-border-top-left-radius: @radius;
+    border-top-left-radius: @radius;
+}
+
+.esdoc-standard-corners-left (@radius: 4px) {
+    -webkit-border-top-left-radius: @radius;
+    -moz-border-top-left-radius: @radius;
+    -ms-border-top-left-radius: @radius;
+    -o-border-top-left-radius: @radius;
+    border-top-left-radius: @radius;
+}
+
+.esdoc-standard-corners-right (@radius: 4px) {
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-top-right-radius: @radius;
+    -ms-border-top-right-radius: @radius;
+    -o-border-top-right-radius: @radius;
+    border-top-right-radius: @radius;
+}
+
+.esdoc-standard-padding {
+    padding: @base-padding-3;
+}
+
+.esdoc-standard-header {
+    .esdoc-standard-padding;
+    font-size: @base-font-4;
+    font-weight: bold;
+    margin-bottom: @base-margin-1;
+    padding: @base-padding-3;
+    &:first-letter {
+        text-transform : capitalize;
+    }
+}
+
+.esdoc-standard-header-1 {
+    .esdoc-standard-header;
+    font-size: @base-font-5;
+}
+
+.esdoc-standard-header-2 {
+    .esdoc-standard-header;
+    font-style: italic;
+}
+
+.esdoc-standard-navigation-target  {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.esdoc-standard-hyperlink {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.esdoc-standard-email {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.esdoc-selection-target {
+    &.is-selected {
+        .esdoc-state-7;
+    }
+    &:not(.is-selected):hover {
+        .esdoc-state-2;
+    }
+}

@@ -1,0 +1,123 @@
+.esdoc-standard-header-1, 
+.esdoc-standard-header-2 {
+    .esdoc-state-7;
+}
+
+.esdoc-viewer,
+.esdoc-viewer * {
+    .esdoc-color-0;
+}
+
+.esdoc-viewer {
+    .esdoc-color-0;
+
+    /* --- HEADER --- */
+    .esdoc-viewer-header-outer,
+    .esdoc-viewer-header-outer *,
+    .esdoc-viewer-header-outer a{
+        .esdoc-color-1;
+    }
+
+    .esdoc-viewer-header-outer {
+        .esdoc-document-group-selector {
+            .esdoc-widget-button {
+                &.active {
+                    .esdoc-color-1-active;
+                    &:hover {
+                        .esdoc-color-1-active-hover;
+                    }
+                }
+                &:not(.active) {
+                    .esdoc-color-1-inactive;
+                    &:hover {
+                        .esdoc-state-inactive-1-hover;
+                    }
+                }
+            }
+        }
+    }
+
+    /* --- CONTENT --- */
+    .esdoc-viewer-content-outer {
+        .esdoc-viewer-content {
+            .esdoc-content-block, .esdoc-content-block * {
+                .esdoc-state-1;
+            }
+            .esdoc-document-section-selector,
+            .esdoc-document-section-selector * {
+                .esdoc-color-2
+            }
+            .esdoc-document-section-selector {
+                .esdoc-widget-button-group {
+                    .esdoc-widget-button {
+                        &.active {
+                            .esdoc-color-2-active;
+                            &:hover {
+                                .esdoc-color-2-active-hover;
+                            }
+                        }
+                        &:not(.active) {
+                            .esdoc-color-2-inactive;
+                            &:hover {
+                                .esdoc-color-2-inactive-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* --- FOOTER --- */
+    .esdoc-viewer-footer-outer, 
+    .esdoc-viewer-footer-outer *,
+    .esdoc-viewer-footer-outer a{
+        .esdoc-color-1;
+    }
+}
+
+
+/* --- CIM COMPONENT TREE --- */
+.cim-component-outer {
+    .cim-component {
+        .cim-component-tree-outer {
+            .cim-component-tree {
+                .cim-component-tree-node {
+                    &.is-selected,
+                    &.is-selected * {
+                        .esdoc-state-7;
+                    }
+                    &:not(.is-selected) {
+                        &:hover,
+                        &:hover * {
+                            .esdoc-state-2;
+                        }
+                    }
+                }
+            }
+        }
+        .cim-component-header-outer {
+            .cim-component-header {
+                .cim-component-header-breadcrumb,
+                .cim-component-header-breadcrumb-separator {
+                    .esdoc-state-7;
+                }
+            }
+        }
+        .cim-component-detail-outer {
+            .cim-component-detail {
+                .cim-component-detail-section-content {
+                    .cim-component-property-tree {
+                        .cim-component-property-tree-node {
+                            &:hover,
+                            &:hover * {
+                                .esdoc-state-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

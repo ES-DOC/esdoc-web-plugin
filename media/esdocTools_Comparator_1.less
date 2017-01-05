@@ -1,0 +1,234 @@
+/*
+**************************************
+   CIM comparator.
+**************************************
+*/
+
+.c1-state-primary {
+    background-color: rgb(139, 139, 219);
+    color: white;
+}
+
+.c1-state-secondary {
+    background-color: rgb(167, 167, 255);
+    color: white;
+}
+
+.c1-state-disabled {
+    background-color: skyblue;
+    color: white;
+}
+
+.c1-state-inscope {
+    background-color: rgb(31, 31, 91);
+    color: white;
+}
+
+.c1-state-selected {
+    background-color: goldenrod;
+    color: white;
+}
+
+.c1-state-current {
+    background-color: goldenrod;
+    color: black;
+}
+
+.c1-state-highlight {
+    background-color: yellow;
+    color: black;
+    font-weight:bold;
+}
+
+.c1-state-even {
+    background-color: rgb(213, 255, 253);
+    color: black;
+}
+
+.c1-state-odd {
+    background-color: rgb(165, 225, 222);
+    color: black;
+}
+
+.c1-button {
+    border: 1px solid rgb(167, 167, 255);
+    font-size: @base-font-5;
+    padding: @base-padding-3 @base-padding-5;
+    text-align: center;
+    width: 80px;
+    .esdoc-standard-corners;
+    &:first-letter {
+        text-transform : capitalize;
+    }
+    &.is-active {
+        cursor: pointer;
+        font-weight: bold;
+        .c1-state-primary;
+        &.is-current {
+            .c1-state-inscope;
+            &:hover {
+                .c1-state-inscope;
+            }
+        }
+        &:hover {
+            .c1-state-inscope;
+        }
+    }
+    &:not(.is-active) {
+        .c1-state-disabled;
+        font-weight: normal;
+        &:hover {
+            .c1-state-disabled;
+            font-weight: normal;
+        }
+    }
+}
+
+.esdoc-comparator {
+
+    .item.selectable {
+        &:not(is-selected) {
+            .selection-target {
+                &:hover {
+                    .c1-state-inscope;
+                }
+            }
+        }
+        &.is-selected {
+            &.is-current {
+                .selection-target {
+                    .c1-state-current;
+                    &:hover {
+                        .c1-state-inscope;
+                    }
+                }
+            }
+            &:not(.is-current) {
+                .selection-target {
+                    .c1-state-selected;
+                    &:hover {
+                        .c1-state-inscope;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-1-toolbar,
+    .tab-1-help-toolbar,
+    .tab-2-toolbar {
+        display : table;
+        margin-bottom: 0.5em;
+        padding: @base-padding-5 0;
+        width: 100%;
+        .esdoc-standard-corners;
+        .c1-state-primary;
+
+        .toolbar {
+            display: table-row;
+
+            .caption {
+                float: left;
+                font-size: @base-font-7;
+                font-weight:bold;
+                font-style: italic;
+                margin-top: 2px;
+                .esdoc-standard-corners;
+                .esdoc-standard-padding;
+            }
+            .buttons {
+                float: right;
+                margin-right: @base-margin-1;
+                padding: @base-padding-3;
+                .esdoc-standard-corners;
+                .c1-state-secondary;
+                .button {
+                    float:right;
+                    .c1-button;
+                    &:not(:first-child) {
+                        margin-left: @base-margin-1;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-1-header {
+        clear: left;
+        .header {
+            font-size: @base-font-3;
+            float: left;
+            padding: 0.4em;
+            .c1-state-highlight;
+            .esdoc-standard-corners;
+            input {
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+        }
+        .model-list-header {
+            width: 24%;
+        }
+        .component-tree-header {
+            width: 33%;
+            margin-left:3%;
+            .indicator-headers {
+                float: right;
+                margin-right: 13px;
+                .indicator-header {
+                    width: 1.0em;
+                    margin-right: 3px;
+                }
+            }
+        }
+        .property-tree-header {
+            float:right;
+            width: 35%;
+        }
+    }
+
+    .tab-1-content {
+        clear: left;
+        .content {
+            border: 1px solid lightgrey;
+            float: left;
+            height: 600px;
+            margin-top : 0.3em;
+            overflow-y:auto;
+            padding: 0.3em;
+            .esdoc-standard-corners;
+        }
+        .model-list-content {
+            width: 24%;
+        }
+        .component-tree-content {
+            width: 33%;
+            margin-left:3%;
+        }
+        .property-tree-content {
+            float:right;
+            width: 35%;
+        }
+    }
+
+    .tab-2-summary {
+        display : table;
+        margin-bottom: 0.5em;
+        padding: @base-padding-5 0;
+        width: 100%;
+        .c1-state-highlight;
+        .esdoc-standard-corners;
+        .summary {
+            display: table-row;
+            .hint {
+                float: left;
+                padding-left: @base-padding-5;
+            }
+            .stats {
+                float: right;
+                padding-right: @base-padding-5;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+/*
+**************************************
+   CIM comparator.
+**************************************
+*/
+
+.esdoc-comparator {
+
+    .report {
+
+        .csv {
+            textarea {
+                width: 100%;
+                height: 600px;
+            }
+        }
+
+        .html {
+            max-height: 600px;
+            overflow-x:auto;
+            overflow-y:auto;
+
+            table {
+                table-layout:fixed;
+                width : 100%;
+
+                td {
+                    .esdoc-standard-padding;
+                    &:first-child {
+                        text-align: left;
+                        width : 100px;
+                    }
+                    &:not(:first-child) {
+                        text-align: center;
+                        width : 200px;
+                    }
+                }
+
+                thead {
+                    overflow-x:auto;
+                    tr {
+                        td {
+                            .c1-state-primary;
+                            font-size: @base-font-3;
+                            font-weight: bold;
+                            border: 1px solid white;
+                        }
+                    }
+                }
+
+                tbody {
+                    overflow-x:auto;
+                    tr {
+                        td {
+                            border-bottom: 1px solid black;
+                            border-right: 1px solid black;
+                            font-weight: normal;
+                            &:nth-child(even) {
+                                .c1-state-even;
+                            }
+                            &:nth-child(odd) {
+                                .c1-state-odd;
+                            }
+                            &:not(:first-child) {
+                                word-wrap:break-word;
+                            }
+                            &:first-child {
+                                font-size: @base-font-3;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,78 @@
+/*
+**************************************
+   CIM comparator.
+**************************************
+*/
+
+.esdoc-comparator {
+
+    .component-tree {
+        display : table;
+        width:100%;
+
+        .item {
+            display : table-row;
+
+            .name {
+                display : table-cell;
+                width:85%;
+                .text {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+                .esdoc-standard-corners;
+                .esdoc-standard-padding;
+            }
+
+            .indicators {
+                display : table-cell;
+                .indicator {
+                    .esdoc-standard-corners;
+                    float:left;
+                    width: 1.0em;
+                    height: 1.0em;
+                    margin-top: 6px;
+                    margin-left: 2px;
+                }
+            }
+
+            /* Component indentation */
+            &.depth-0 .name .text{
+                .base-indent(0);
+                font-size: @base-font-4;
+                font-style: italic;
+                font-weight: bolder;
+            }
+            &.depth-1 .name .text{
+                .base-indent(1);
+            }
+            &.depth-2 .name .text{
+                .base-indent(2);
+            }
+            &.depth-3 .name .text{
+                .base-indent(3);
+            }
+            &.depth-4 .name .text{
+                .base-indent(4);
+            }
+            &.depth-5 .name .text{
+                .base-indent(5);
+            }
+            &.depth-6 .name .text{
+                .base-indent(6);
+            }
+
+            /* Component indicators */
+            &.selectable-model .indicators .indicator:nth-child(1) {
+                .c1-state-inscope;
+            }
+            &.selected-models-union .indicators .indicator:nth-child(2) {
+                .c1-state-selected;
+            }
+            &.selected-models-intersection .indicators .indicator:nth-child(3) {
+                .c1-state-selected;
+            }
+        }
+    }
+
+}
