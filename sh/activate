@@ -1,0 +1,9 @@
+# Set home path
+export ESDOC_JSPLUGIN_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export ESDOC_JSPLUGIN_HOME="$( cd "$( dirname "${ESDOC_JSPLUGIN_HOME[0]}" )" && pwd )"
+
+# Ensure shell scripts are executable
+chmod a+x $ESDOC_JSPLUGIN_HOME/sh/*.sh
+
+# Aliases
+alias esdoc-js-plugin-compile=$ESDOC_JSPLUGIN_HOME/sh/compile.sh
