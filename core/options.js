@@ -36,7 +36,7 @@
     if (window.location.host) {
         if (window.location.host.indexOf('test') >= 0 &&
             window.location.host.indexOf('es-doc.org') >= 0) {
-            ESDOC.options.apiBaseURL = 'http://test.api.es-doc.org';
+            ESDOC.options.apiBaseURL = 'https://test-api.es-doc.org';
         } else {
             ESDOC.options.apiBaseURL = 'http://api.es-doc.org';
         }
