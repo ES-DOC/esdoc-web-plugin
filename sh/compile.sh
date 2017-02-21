@@ -133,7 +133,7 @@ declare DISCLAIMER="/*!
  * esdoc-js-client - javascript Library vVERSION
  * https://github.com/ES-DOC/esdoc-js-client
  *
- * Copyright YEAR, ES-DOC (http://es-doc.org)
+ * Copyright YEAR, ES-DOC (https://es-doc.org)
  *
  * Licensed under the following licenses:.
  *     CeCILL       http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
