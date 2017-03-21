@@ -8,7 +8,7 @@
     // Initialise root object.
     root.CIM = root.cim = root.ESDOC = root.esdoc = {
         // App version.
-        VERSION: '0.9.7.1',
+        VERSION: '0.9.7.2',
 
         // App name.
         NAME: "Earth System Documentation",
