@@ -8,7 +8,7 @@
  *     CeCILL       http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
  *     GPL v3       http://www.gnu.org/licenses/gpl.html
  *
- * Date: Tue Mar 21 14:36:57 UTC 2017
+ * Date: Tue Mar 21 14:44:59 UTC 2017
  */
 
 /*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
@@ -526,7 +526,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
     if (window.location.host) {
         if (window.location.host.indexOf('test') >= 0 &&
             window.location.host.indexOf('es-doc.org') >= 0) {
-            ESDOC.options.staticBaseURL = 'http://test.static.es-doc.org';
+            ESDOC.options.staticBaseURL = 'http://test-static.es-doc.org';
         } else {
             ESDOC.options.staticBaseURL = 'http://static.es-doc.org';
         }
@@ -3369,7 +3369,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
     if (window.location.host) {
         if (window.location.host.indexOf('test') >= 0 &&
             window.location.host.indexOf('es-doc.org') >= 0) {
-            viewerBaseURL = 'http://test.view.es-doc.org';
+            viewerBaseURL = 'http://test-view.es-doc.org';
         } else {
             viewerBaseURL = 'http://view.es-doc.org';
         }

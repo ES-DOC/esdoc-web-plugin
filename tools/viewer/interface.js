@@ -15,7 +15,7 @@
     if (window.location.host) {
         if (window.location.host.indexOf('test') >= 0 &&
             window.location.host.indexOf('es-doc.org') >= 0) {
-            viewerBaseURL = 'http://test.view.es-doc.org';
+            viewerBaseURL = 'http://test-view.es-doc.org';
         } else {
             viewerBaseURL = 'http://view.es-doc.org';
         }

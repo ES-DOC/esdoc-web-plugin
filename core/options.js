@@ -48,7 +48,7 @@
     if (window.location.host) {
         if (window.location.host.indexOf('test') >= 0 &&
             window.location.host.indexOf('es-doc.org') >= 0) {
-            ESDOC.options.staticBaseURL = 'http://test.static.es-doc.org';
+            ESDOC.options.staticBaseURL = 'http://test-static.es-doc.org';
         } else {
             ESDOC.options.staticBaseURL = 'http://static.es-doc.org';
         }
