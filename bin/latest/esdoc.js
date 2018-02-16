@@ -1,14 +1,14 @@
 /*!
- * esdoc-js-client - javascript Library v0.9.7.4
+ * esdoc-js-client - javascript Library v0.10.0
  * https://github.com/ES-DOC/esdoc-js-client
  *
- * Copyright 2017, ES-DOC (https://es-doc.org)
+ * Copyright 2018, ES-DOC (https://es-doc.org)
  *
  * Licensed under the following licenses:.
  *     CeCILL       http://www.cecill.info/licences/Licence_CeCILL_V2-en.html
  *     GPL v3       http://www.gnu.org/licenses/gpl.html
  *
- * Date: Wed Jul  5 12:38:07 UTC 2017
+ * Date: Fri Feb 16 11:37:05 UTC 2018
  */
 
 /*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
@@ -407,7 +407,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
     // Initialise root object.
     root.CIM = root.cim = root.ESDOC = root.esdoc = {
         // App version.
-        VERSION: '0.9.7.3',
+        VERSION: '0.10.0.0',
 
         // App name.
         NAME: "Earth System Documentation",
