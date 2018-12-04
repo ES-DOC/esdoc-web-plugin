@@ -41,10 +41,10 @@
         // Set of email related constants.
         email : {
             // Contact email.
-            contact : "es-doc-contact@list.woc.noaa.gov",
+            contact : "support@es-doc.org",
 
             // Support email.
-            support : "es-doc-support@list.woc.noaa.gov",
+            support : "support@es-doc.org",
 
             // Default email subject.
             defaultSubject : 'ES-DOC :: subject goes here',
